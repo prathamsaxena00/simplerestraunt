@@ -1,0 +1,19 @@
+<script src="ser.js"></script>
+
+<html lang="en">
+<body>
+<b>foods:</b><br>
+<select id="slct1" onchange="populate(this.id,'slct2')">
+    <option>-Select-</option>
+    <option value="veg">Vegetarian food</option>
+    <option value="nonveg">Non vegetarian food</option>
+</select><br><br>
+<b>food items :</b><br>
+<select  id="slct2" onchange="changeimg(this.id,'foodimg','price')" >
+    <option>-Food items-</option>
+</select><br><br>
+<div id="result"></div>
+<img src="default.jpg" name="foodimg" id="foodimg" width="200">
+<p name="price" id="price">thanks for choosing our restraunt</p>
+</body>
+</html>
